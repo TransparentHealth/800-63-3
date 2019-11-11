@@ -1,8 +1,8 @@
-### Vectors of Trust and VoT Components for Consumer Health
+### OpenID Connect / Vectors of Trust Profile For Consumer Health
 
-This document maps NIST SP 800-63-3 to Vectors of Trust for facilitating health information exchange. It defines a profile for Open ID Connect servers and relying parties wishing to communicate `IAL` and `AAL`.
+This document maps NIST SP 800-63-3 to Vectors of Trust. It defines a profile for Open ID Connect servers and relying parties wishing to communicate `IAL` and `AAL` in a simple and consistent way.
 
-* For Servers - The `id_token` SHALL contain the claim `vot` that can be made up of one or more of the following values in the table to follow.
+* For Open ID Connect Providers - The `id_token` SHALL contain the claim `vot`. that can be made up of one or more of the following values in the table to follow.  For example, `P2.C2` means `IAL2` and `AAL2`.
 * For Relying Paties - The `id_token` should interpret the contents of the `vot` claim. The values may control access to  authorizations based on situatition specific business rules. 
 
 The table below describes the valid values and to be contained
@@ -20,6 +20,7 @@ The table below describes the valid values and to be contained
 |A2|FAL2|
 |A3|FAL3|
 
+
 **Table: 800-63 General Mapping to VoT Components**
 
 |VoT Component|SP 800-63 xAL|SP 800-63 Requirements and Recommendations|
@@ -29,11 +30,7 @@ The table below describes the valid values and to be contained
 |A|FAL|assertion presentation|
 
 
-### Identity Proofing
-
-This section defines a series of `P` component values dervied from [SP 800-63A](sp800-63a.html).
-
-#### IAL Values
+####  IAL Values
 
 |IAL|Component Value|
 |:----:|:--:|
@@ -42,10 +39,6 @@ This section defines a series of `P` component values dervied from [SP 800-63A](
 |IAL2|P2|
 |IAL3|P3|
 
-
-### Authentication Events
-
-This section defines a series of `C` component values dervied from [SP 800-63B](sp800-63b.html).
 
 #### AAL Values
 
@@ -56,11 +49,6 @@ This section defines a series of `C` component values dervied from [SP 800-63B](
 |AAL3|C3|
 
 
-
-
-### Federation and Assertions
-
-This section defines a series of `A` component values dervied from [SP 800-63C](sp800-63c.html).
 
 #### FAL Values
 
@@ -73,4 +61,4 @@ This section defines a series of `A` component values dervied from [SP 800-63C](
 
 ## References
 
-[VoT] Vectors of Trust, December 8, 2018, available at: [https://tools.ietf.org/html/rfc848](https://tools.ietf.org/html/rfc848)
+[VoT] Vectors of Trust available at: [https://tools.ietf.org/html/rfc848](https://tools.ietf.org/html/rfc848)
