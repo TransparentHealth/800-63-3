@@ -7,7 +7,7 @@ This document maps NIST SP 800-63-3 to Vectors of Trust. It defines a profile fo
 
 The table below describes the valid values and to be contained
 
-|Component Value| NIST SP 800-63-3|
+|VoT Component Value| NIST SP 800-63-3|
 |:----:|:--:|
 |P0|IAL1|
 |P1|IAL1|
